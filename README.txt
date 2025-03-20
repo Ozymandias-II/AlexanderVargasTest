@@ -4,7 +4,7 @@
 - NPM
 
 Clonar el repositorio:
-    git clone []
+    git clone https://github.com/Ozymandias-II/AlexanderVargasTest-.git
 Instalar dependencias o verificar que existen:
     npm install
 Ejecutar Cypress:
