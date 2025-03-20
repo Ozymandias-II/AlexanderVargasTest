@@ -25,6 +25,3 @@ En la interfaz gráfica de Cypress:
     2. Seleccionar Chrome
     3. Seleccionar Botón 'Start E2E Testing in Chrome'
     4. En la ventana Specs, seleccionar petstore.cy.js
-
-
-##Se han agregado todos los modules a este proyecto para facilitar su instalación
