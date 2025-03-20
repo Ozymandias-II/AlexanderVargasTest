@@ -1,0 +1,14 @@
+### **Hallazgos y Conclusiones**
+Hallazgos:
+
+1. La página de Saucedemo actua de forma estable, las funciones necesarias para ejecutar el flujo de compra seleccionando 2 items aleatorios funciona correctamente.
+2. Los Elementos del DOM están correctamente estructurados y son consistentes con sus nombres.
+3. El mensaje final propuesto en la prueba debería ser:
+    "THANK YOU FOR YOUR ORDER"
+Pero el mensaje encontrado fue:
+    "Thank you for your order!", Para referencia de este hallazgo visualizar el video adjunto en la carpeta /Screenshots/AlexanderVargasTest-saucedemo.mkv
+
+Conclusiones:
+- Es necesario consultar con el equipo de experiencia de usuario cual mensaje es el correcto, bajo sus definiciones, y de ser necesario corregir los requerimientos del test o el texto en el fron-end.
+- Fuera el mensaje final, los puntos críticos del flujo de compra fueron validados correctamente, haciendo énfasis en el logeo, agregar items al carrito y el proceso de compra desde el carrito.
+- Al Test E2E se implementaron buenas prácticas como el Page Object Model para separar la lógica de la interfaz, Nomenclatura Clara y la configuración del entorno está lista para CI/CD

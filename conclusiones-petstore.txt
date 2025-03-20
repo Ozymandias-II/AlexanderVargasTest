@@ -1,0 +1,17 @@
+### **Hallazgos y Conclusiones**
+Hallazgos:
+
+1. Las APIS de Consulta (GET) son muy inestables, probablemente debido al exceso de  pruebas que se han ejecutado en ellas, de todas formas es común que falle, se debe revisar su estado y disponibilidad.
+2. En el video adjunto /Screenshots/AlexanderVargasTest-petStore1.mp4 Podemos observar como ejecutando la consulta GET ById desde Postman, esta falla de manera aleatoria.
+3. La APIs parecen tardar en guardar e indexar la información correctamente, pues se ejecutó una prueba creanco una mascota con el id estático '12345' y las APIs GET no fallan ni una vez.
+    Para fortalecer este hallazgo se adjunta la captura /Screenshots/AlexanderVargasTest-cap1.png donde se verifica el éxito de la prueba de API en su totalidad.
+    También se adjunta el video /Screenshots/AlexanterVargasTest-petStore2.mkv donde se sigues el flujo de prueba de las APIs con la generación de Ids Randómicos y posteriormente con el id estático 12345, que se uso en las primeras pruebas,
+    en este video podemos observar como falla tanto la API (GET) /pet/{petId} como la API /pet/findByStatus.
+
+
+Conclusiones:
+
+1. Se debe verificar, optimizar y/o corregir la disponibilidad de las APIs de Consulta.
+2. Bajo las condiciones actuales los servicios API de petstore.swagger.io/v2 no están en condiciones de ser presentados a usuarios finales, 
+    cuando se acaba de insertar una mascota, las APIS GET fallan de forma aleatoria, no se puede garantizar los servicios ni la calidad.
+3. Si se ejecuta una búsqueda GET con una prueba anterior a cierto tiempo, aprox 20 min, las APIs GET ya no fallan, existen un problema en la indexación y búsqueda de la información, esta tarda en reflejarse.
